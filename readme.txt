@@ -4,7 +4,7 @@ Donate link: http://www.achterdeschermen.nl
 Tags: WK, sOUTH africa 2010, moodify, soccer
 Requires at least: 2.0.2
 Tested up to: 2.9.2
-Stable tag: trunk
+Stable tag: 1.0
 
 This plugin gives a nice dutch-supporter (soccer) supporter attachment (orange) to any wordpress-website/blog.
 
