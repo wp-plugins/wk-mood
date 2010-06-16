@@ -74,6 +74,28 @@ t2_verwijder.start();
 t2_verwijder.onMotionFinished = function(){document.getElementById('mood_flash1').innerHTML = ''};
 }
 
+function naar_rechts_mood() {
+var actual_left = document.getElementById('mood_1').style.left;
+var actual_left = actual_left.slice(0,-2);
+
+var verschoven_left = 700;
+t3_rechts = new Tween(document.getElementById('mood_1').style,'left',Tween.regularEaseOut,actual_left,verschoven_left,2,'px');
+t3_rechts.start();
+document.getElementById('pijl_R').src='';
+document.getElementById('pijl_L').src='/wp-content/plugins/wk-mood/pijl_l.png';
+}
+
+function naar_links_mood() {
+var actual_left = document.getElementById('mood_1').style.left;
+var actual_left = actual_left.slice(0,-2);
+var actual_left = 700;
+
+var verschoven_left = 0;
+t4_links = new Tween(document.getElementById('mood_1').style,'left',Tween.regularEaseOut,actual_left,verschoven_left,2,'px');
+t4_links.start();
+document.getElementById('pijl_R').src='/wp-content/plugins/wk-mood/pijl_r.png';
+document.getElementById('pijl_L').src='';
+}
 
 Tween = function(obj, prop, func, begin, finish, duration, suffixe){
 	this.init(obj, prop, func, begin, finish, duration, suffixe)
